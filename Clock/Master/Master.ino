@@ -16,6 +16,11 @@ int seconds = 0, minutes = 0, hours = 0;
 #define TIME_DELAY 1000
 unsigned long lastTime = 0;
 
+/** Function Prototypes ************************************/
+void updateDisplay(void);
+void transmitMinutes(void);
+void transmitHours(void);
+
 
 /** Initial Configurations ********************************/
 void setup() 
@@ -25,12 +30,6 @@ void setup()
   displayMaster.Begin(1,0,1,8,9,A2,A1,4,3,2,A0,5,6); 
   displayMaster.Brightness(1);
 }
-
-/** Function Prototypes ************************************/
-
-void updateDisplay(void);
-void transmitMinutes(void);
-void transmitHours(void);
 
 
 /** While loop *********************************************/
