@@ -22,8 +22,8 @@ void setup()
 {
   Wire.begin();
 
-  displayMaster.Begin(1,2,12,11,10,9,7,A3,A1,A0,8,13,0);
-  displayMaster.Brightness(90);
+  displayMaster.Begin(1,0,1,8,9,A2,A1,4,3,2,A0,5,6); 
+  displayMaster.Brightness(1);
 }
 
 /** Function Prototypes ************************************/
